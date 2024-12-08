@@ -7,7 +7,7 @@ body {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 80%;
+  grid-template-columns: 200px 1fr;
   grid-template-areas:
     "nav nav "
     "aside section "
@@ -91,7 +91,9 @@ button:hover {
 }
 .card-container {
   display: flex;
-  gap: 30px;
+  justify-content: space-between right;
+  column-gap: 80px;
+  row-gap: 30px;
   flex-wrap: wrap;
 }
 .card-img {
@@ -118,7 +120,7 @@ button {
     sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
-  background-image: linear-gradient(rgb(68, 12, 109), rgb(169, 21, 255));
+  background-image: linear-gradient(rgb(47, 8, 75), rgb(173, 56, 241));
   background-clip: text;
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);
   margin-left: 20px;
